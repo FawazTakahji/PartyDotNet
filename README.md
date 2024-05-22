@@ -3,7 +3,7 @@
   <h3 align="center">PartyDotNet</h3>
 
   <p align="center">
-    A .NET client for the <a href="https://kemono.su">Kemono</a>/<a href="https://coomer.su">Coomer</a> API made with <a href="https://github.com/reactiveui/refit">Refit</a>.
+    A .NET client for the Party API made with <a href="https://github.com/reactiveui/refit">Refit</a>.
     <br/>
     <br/>
     <a href="https://github.com/FawazTakahji/PartyDotNet/issues/new?labels=bug&template=bug_report.md">Report Bug</a>
