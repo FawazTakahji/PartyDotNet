@@ -1,5 +1,5 @@
 # PartyDotNet
-A .NET client for the [Kemono](https://kemono.su)/[Coomer](https://coomer.su) API made with [Refit](https://github.com/reactiveui/refit).
+A .NET client for the Party API made with [Refit](https://github.com/reactiveui/refit).
 
 [![version](https://img.shields.io/github/v/release/FawazTakahji/PartyDotNet?color=Green&include_prereleases)](https://github.com/FawazTakahji/PartyDotNet/releases)
 [![NuGet Version](https://img.shields.io/nuget/vpre/PartyDotNet)](https://www.nuget.org/packages/PartyDotNet)
