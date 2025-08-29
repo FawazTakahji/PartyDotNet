@@ -1,3 +1,6 @@
+> [!WARNING]  
+> Because of the way the kemono api works you're better off implementing your own client without using refit.
+
 <br/>
 <p align="center">
   <h3 align="center">PartyDotNet</h3>
