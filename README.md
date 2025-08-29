@@ -27,17 +27,17 @@ The latest release can be download from [NuGet](https://www.nuget.org/packages/P
 
 ### Without a session cookie
 ```csharp
-IPartyClient apiClient = RestService.For<IPartyClient>("https://kemono.su/api/v1");
+IPartyClient apiClient = RestService.For<IPartyClient>("https://kemono.cr/api/v1");
 List<Post> posts = await apiClient.GetRecentPosts();
 ```
 
 ### With a session cookie
 ```csharp
 CookieContainer container = new();
-container.Add(new Cookie("session", "<session cookie>", string.Empty, "coomer.su"));
+container.Add(new Cookie("session", "<session cookie>", string.Empty, "kemono.cr"));
 
 HttpClientHandler handler = new() { CookieContainer = container };
-HttpClient httpClient = new(handler) { BaseAddress = new Uri("https://coomer.su/api/v1") };
+HttpClient httpClient = new(handler) { BaseAddress = new Uri("https://kemono.cr/api/v1") };
 
 IPartyClient apiClient = RestService.For<IPartyClient>(httpClient);
 List<FavoriteCreator> creators = await apiClient.GetFavoriteCreators();
@@ -49,11 +49,11 @@ Configuring services
 ServiceCollection collection = new();
 
 CookieContainer container = new();
-container.Add(new Cookie("session", "<session token>", string.Empty, "kemono.su"));
+container.Add(new Cookie("session", "<session token>", string.Empty, "kemono.cr"));
 
 collection.AddHttpClient("KemonoClient", client =>
 {
-    client.BaseAddress = new Uri("https://kemono.su/api/v1");
+    client.BaseAddress = new Uri("https://kemono.cr/api/v1");
 })
 .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
 {
